@@ -2,21 +2,14 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
 
-    String name;
-    name = "Oskar";
+    katzeninfo("Oskar",70, 7.8, true);
+    System.out.println();
+    katzeninfo("Basilio",45, 3.7, false);
+}
 
-    int laenge;
-    laenge = 70;
-
-    double gewicht;
-    gewicht = 7.8;
-
-    boolean schlaf
-            = false;
-
-
+void katzeninfo(String name, int laenge, double gewicht, boolean schlaf) {
     System.out.println("Meine Katze heißt " + name +
-    " und er ist " + laenge +" cm lang."+"\nEr wiegt "+ gewicht + " Kilogramm.");
+            " und er ist " + laenge +" cm lang."+"\nEr wiegt "+ gewicht + " Kilogramm.");
     if(schlaf){
         System.out.println("Er schläft gerade.");
     }
