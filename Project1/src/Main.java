@@ -2,18 +2,39 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
 
-    katzeninfo("Oskar",70, 7.8, true);
+// katzeninfo("Oskar",70, 7.8, true);
+
+ /*
     System.out.println();
     katzeninfo("Basilio",45, 3.7, false);
-}
+ */
 
-void katzeninfo(String name, int laenge, double gewicht, boolean schlaf) {
-    System.out.println("Meine Katze heißt " + name +
-            " und er ist " + laenge +" cm lang."+"\nEr wiegt "+ gewicht + " Kilogramm.");
-    if(schlaf){
-        System.out.println("Er schläft gerade.");
-    }
-    else{
-        System.out.println("Er isst gerade.");
-    }
+    Katze osya = new Katze("Oskar", 70, 7.8, true);
+/*
+osya.name = "Oskar";
+osya.laenge = 70;
+osya.gewicht =7.8;
+osya.schlaf = true;
+*/
+    Katze basya = new Katze("Basilio", 45, 3.7, false);
+    /*
+    basya.name = "Basilio";
+    basya.laenge = 45;
+    basya.gewicht =3.7;
+    basya.schlaf = false;
+*/
+
+    Katze toffi = new Katze("Toffifee", 65, 5, true);
+
+    Katze nina = new Katze("Nina", 55, 2.8, false);
+
+    osya.katzeninfo();
+    System.out.println();
+    basya.katzeninfo();
+    System.out.println();
+    toffi.katzeninfo();
+    System.out.println();
+    nina.katzeninfo();
+
+
 }
