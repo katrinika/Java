@@ -37,6 +37,8 @@ void main() {
     hof.tierBericht();
     hof.tiersuche(new KatzenFinder());
     hof.tiersuche(new HundeFinder());
+    hof.tiersuche(new GewichtFinder());
+    hof.tiersuche(new LaengeFinder());
 
 
 }
