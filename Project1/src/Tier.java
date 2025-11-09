@@ -45,5 +45,7 @@ public class Tier {
             System.out.println(pronomen + " isst gerade.");
         }
     }
+
+
 }
 

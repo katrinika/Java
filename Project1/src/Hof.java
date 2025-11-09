@@ -15,13 +15,25 @@ public class Hof {
 
     }
 
+    public void tiersuche(Finder finder) {
+        System.out.println();
+        System.out.println(finder.titel());
+        for (int i = 0; i < tiere.size(); i = i + 1) {
+            Tier meinTier = tiere.get(i);
+            if (finder.passt(meinTier)) {
+                System.out.println("\t- " + meinTier.name);
+            }
+        }
+    }
+
+    /*
     public void tierSuche() {
         System.out.println();
-        System.out.println("Alle Katzen werden gesucht");
+        System.out.println("Alle Katzen werden gesucht.");
         for (int i = 0; i < tiere.size(); i = i + 1){
             Tier meinTier = tiere.get(i);
             if(meinTier.katze){
-                System.out.println(meinTier.name);
+                System.out.println("\t- " + meinTier.name);
             }
         }
     }
@@ -35,5 +47,6 @@ public class Hof {
             }
         }
     }
+    */
 }
 

@@ -35,7 +35,8 @@ void main() {
     hof.tierBericht();
     hof.tierhinzufuegen(toffi);
     hof.tierBericht();
-    hof.tierSuche();
-    hof.tierSuche2();
+    hof.tiersuche(new KatzenFinder());
+    hof.tiersuche(new HundeFinder());
+
 
 }
