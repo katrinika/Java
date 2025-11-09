@@ -11,7 +11,7 @@ public class Katze {
         this.schlaf = schlaf;
     }
 
-    boolean weiblich() {
+    public boolean weiblich() {
         return name.endsWith("a"); //Weibliche Katzen enden Name mit A
     }
 
