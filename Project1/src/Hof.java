@@ -14,5 +14,26 @@ public class Hof {
         System.out.println();
 
     }
+
+    public void tierSuche() {
+        System.out.println();
+        System.out.println("Alle Katzen werden gesucht");
+        for (int i = 0; i < tiere.size(); i = i + 1){
+            Tier meinTier = tiere.get(i);
+            if(meinTier.katze){
+                System.out.println(meinTier.name);
+            }
+        }
+    }
+
+    public void tierSuche2(){
+        System.out.println("Alle Tiere länger als 50cm werden gesucht.");
+        for (int i = 0; i < tiere.size(); i = i + 1) {
+            Tier meinTier = tiere.get(i);
+            if (meinTier.laenge > 50) {
+                System.out.println(meinTier.name);
+            }
+        }
+    }
 }
 

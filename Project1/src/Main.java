@@ -35,5 +35,7 @@ void main() {
     hof.tierBericht();
     hof.tierhinzufuegen(toffi);
     hof.tierBericht();
+    hof.tierSuche();
+    hof.tierSuche2();
 
 }
