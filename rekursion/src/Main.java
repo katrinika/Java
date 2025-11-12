@@ -23,10 +23,12 @@ public class Main {
         System.out.println("Ist Oskar ein Palyndrom? = " + palindrom("Oskar"));
         System.out.println("Ist Kazak ein Palyndrom? = " + palindrom("kazak"));
         palyndromFinder("wortliste.txt");
+
     }
 
     void palyndromFinder(String filename) throws IOException {
 
+        int anzahl = 0;
 
         BufferedReader br = new BufferedReader(new FileReader(filename));
         String line = br.readLine();
@@ -36,11 +38,13 @@ public class Main {
 
             if(palindrom(klein)){
                 System.out.println("- " + line);
+                anzahl = anzahl + 1;
             }
 
             line = br.readLine();
         }
         br.close();
+        System.out.println("Im Deutschen gibt es "+anzahl+" Polindrome.");
     }
 
     int summe(int n){
